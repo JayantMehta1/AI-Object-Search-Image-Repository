@@ -4,7 +4,6 @@ import numpy as np
 
 thres = 0.5 # Threshold to detect objects
 
-img = cv2.imread('lena.PNG')
 images = [cv2.imread(file) for file in glob.glob("repository/*.png")]
 
 classNames = []
@@ -21,7 +20,6 @@ net.setInputScale(1.0/ 127.5)
 net.setInputMean((127.5, 127.5, 127.5))
 net.setInputSwapRB(True)
 
-# concatanate image horizontally 
 fullRepository = np.concatenate(images, axis=1)
 cv2.imshow('Full Repository', fullRepository)
 cv2.waitKey(0)
