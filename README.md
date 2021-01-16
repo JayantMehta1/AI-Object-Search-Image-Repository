@@ -8,7 +8,7 @@ Object detection and vision technology are implemented using OpenCV. The program
 
 All images that happen to have the target given by the user are then displayed. The target is boxed in green for the user to see and the program outputs a percentage value to convey its confidence.
 
-The data set used for this program is the Coco dataset.
+The dataset used for this program is the Coco dataset.
 
 Here is a walkthrough for the application.
 
